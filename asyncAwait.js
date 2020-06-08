@@ -24,3 +24,23 @@ async function delayA(){
 delayA().then((result)=>{
     console.log(result);
 });
+
+
+function myFunc(){
+return 'func';
+}
+
+async function myAsync(){
+    await delayP(3).then((result)=>{
+        console.log(result);
+    });
+    return 'async';
+}
+
+console.log(myFunc());
+console.log(myAsync());
+
+myAsync().then((result)=>{
+    
+  console.log(result);  
+})
