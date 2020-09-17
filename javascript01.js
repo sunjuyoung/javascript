@@ -43,6 +43,8 @@ const result = chunks.map((chunk)=>{
     return result;
 }
 
+
+
 var a = "band=10&apple=20";
 
 console.log(a.substr(1));
